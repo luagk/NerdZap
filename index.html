@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>NerdZap</title>
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+      
+      body {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        background-image: url("https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png");
+        font-family: 'Roboto', sans-serif;
+
+      }
+      div {
+        background-color: #daf7c1;
+        width: 320px;
+        margin: 8px;
+        padding: 8px 18px;
+        border-radius: 14px;
+        box-shadow: 2px 2px rgba(0, 0, 0, 0.2);
+        display: flex;
+        justify-content: space-between;
+        align-items: center; 
+      }
+
+      div:hover {
+        box-shadow: 4px 4px rgba(0, 0, 0, 0.4);
+        cursor: pointer;
+      }
+      img {
+        width: 40px;
+        height: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <div onclick="mandaZap(this)">
+      <p>Meu amor por você é forte como uma ligação cristalina 😍😍</p>
+      <img
+        src = "https://logosvg.com.br/logos/whatsapp-33.svg"
+      />
+    </div>
+
+    <div onclick="mandaZap(this)">
+      <p>Me chama de potássio e vem K 😜😜</p>
+      <img
+        src = "https://logosvg.com.br/logos/whatsapp-33.svg"
+      />
+    </div>
+
+    <div onclick="mandaZap(this)">
+      <p>Você é feito de berílio, ouro e titânio? Porque você é Be-Au-Ti-Ful! 😊😊</p>
+      <img
+        src = "https://logosvg.com.br/logos/whatsapp-33.svg"
+      />
+    </div>
+
+    <div onclick="mandaZap(this)">
+      <p>Ei, você é f (x) = x ^ (- 1)? Porque eu quero encontrar a área sob suas curvas com meu log natural 😌😌</p>
+      <img
+        src = "https://logosvg.com.br/logos/whatsapp-33.svg"
+      />
+    </div>
+
+    <div onclick="mandaZap(this)">
+      <p>Você na minha vida é igualzinho à Matemática: subtraiu minha tristeza, multiplicou meus sorrisos, adicionou carinho e dividiu meu coração! 🤪🤪</p>
+      <img
+        src = "https://logosvg.com.br/logos/whatsapp-33.svg"
+      />
+    </div>
+
+    <div onclick="mandaZap(this)">
+      <p>Meu coração entra em ressonância quando te vejo 💖💖</p>
+      <img
+        src = "https://logosvg.com.br/logos/whatsapp-33.svg"
+      />
+    </div>
+
+    <div onclick="mandaZap(this)">
+      <p>Você é o Urânio 238 que guia a minha reação nuclear 🫶🫶</p>
+      <img
+        src = "https://logosvg.com.br/logos/whatsapp-33.svg"
+      />
+    </div>
+
+    <div onclick="mandaZap(this)">
+      <p> 01000101 01110101 00100000 01010100 01100101 00100000 01000001 01101101 01101111 00100001 </p>
+      <img
+        src = "https://logosvg.com.br/logos/whatsapp-33.svg"
+      />
+    </div>
+
+    <div onclick="mandaZap(this)">
+      <p> O gradiente da minha paixão aponta na sua direção 😚 </p>
+      <img
+        src = "https://logosvg.com.br/logos/whatsapp-33.svg"
+      />
+    </div>
+
+
+    <script>
+      function mandaZap(elemento) {
+        let texto = elemento.firstElementChild.innerText;
+        let numero = prompt ("Qual o número de telefone?");
+        let zapLink = `https://api.whatsapp.com/send?phone=55${numero}&text=${texto}̣`;
+        
+        window.open(zapLink)
+      }
+      
+    </script>
+  </body>
+</html>
