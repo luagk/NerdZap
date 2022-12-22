@@ -1,2 +1,2 @@
 # NerdZap
-Created with CodeSandbox
+Dispara cantadas nerds por Whatsapp.
